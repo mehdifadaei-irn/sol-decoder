@@ -18,6 +18,7 @@ import { Grid } from '@material-ui/core';
 import {logoDiscord, logoTwitter,logoYoutube} from "ionicons/icons";
 import usePersistentState from '../hooks/usePersistentState';
 import meLogo from '../images/me.png';
+import BuyNftChange from '../components/BuyNftChange';
 
 /**
  * The "Login" page to which all unauthenticated users are redirected to
@@ -187,10 +188,7 @@ function Login() {
                                     <div className='flex flex-row items-center justify-between ml-1 mr-1'>
                                         <div className='login-btn-devider'/> OR <div className='login-btn-devider'/>
                                     </div>
-                                    <IonButton className='buy-nft-btn mt-4 h-11'color='medium' onClick={()=> window.open('https://magiceden.io/marketplace/soldecoder', "_blank")}>
-                                        <img src={meLogo} className="me-logo mr-2"/>
-                                        Buy 1 NFT to gain access
-                                    </IonButton>
+                                    <BuyNftChange/>
                                     <IonButton className='buy-nft-btn mt-3 h-11' color='medium' onClick={()=> window.open('https://discord.gg/sol-decoder', "_blank")}>
                                         { <IonIcon icon={logoDiscord} className="big-emoji mr-2"/>}
                                         Join the Discord

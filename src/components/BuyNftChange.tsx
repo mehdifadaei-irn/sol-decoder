@@ -30,7 +30,10 @@ const BuyNftChange = () => {
                 src={meLogo}
                 className="me-logo mr-2"
                 onClick={() =>
-                    console.log('balance', formatEther(balance || ''))
+                    window.open(
+                        'https://magiceden.io/marketplace/soldecoder',
+                        '_blank'
+                    )
                 }
             />
             <div className="flex flex-col">
